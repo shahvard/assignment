@@ -12,12 +12,12 @@
         android:layout_width="137dp"
         android:layout_height="29dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rg"
         app:srcCompat="@drawable/medals" />
 
-    <TextView
+<!--    <TextView
         android:id="@+id/textView"
         android:layout_width="197dp"
         android:layout_height="437dp"
@@ -30,7 +30,7 @@
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />-->
 
     <RadioGroup
         android:id="@+id/rg"
@@ -64,15 +64,61 @@
 
 
     <ListView
-        android:id="@+id/list1"
-        android:layout_width="70dp"
-        android:layout_height="414dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.069"
+        android:id="@+id/countryList"
+        android:layout_width="167dp"
+        android:layout_height="488dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ListView
+        android:id="@+id/gList"
+        android:layout_width="49dp"
+        android:layout_height="494dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toEndOf="@+id/countryList"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/sList"
+        android:layout_width="39dp"
+        android:layout_height="494dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toEndOf="@+id/bList"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="TouchTargetSizeCheck">
+
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/bList"
+        android:layout_width="49dp"
+        android:layout_height="494dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toEndOf="@+id/gList"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/tList"
+        android:layout_width="39dp"
+        android:layout_height="494dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/sList"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck">
+
+
+    </ListView>
 
     <TextView
         android:id="@+id/textView5"
